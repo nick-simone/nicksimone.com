@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-// main page
+// main page - the webpage runs here
 function App() {
   return (
     <div className="App">
