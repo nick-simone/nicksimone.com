@@ -1,21 +1,11 @@
-/* 
-Colour Pallette
-Dark gray - #1A3442
-gray - #374955
-light gray - #9AAEBB
-dark brown - #3F2E1C
-light brown - #6F5B48
-*/
-
-
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype");
+  font-family: "Fenix";
+  src: url(../fonts/Fenix-Regular.ttf) format("truetype");
 }
 
 * {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Fenix", sans-serif;
 }
 
 .navbar {
@@ -32,11 +22,11 @@ light brown - #6F5B48
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #9AAEBB;
+  color: #898e91;
 }
 
 .navbar ul li a:hover {
-  color: #F7F9F3;
+  color: #e3e3e3;
 }
 
 .navbar ul {
@@ -58,30 +48,49 @@ section {
   text-align: center;
 }
 
+h1 {
+  font-size: 45px;
+}
+
 #section-home {
-  background-color: #374955;
+  background-image: url("../images/sand.jpg");
   height: 100vh;
 }
 #section-home span {
-  color: #9AAEBB;
+  color: #e3e3e3;
   font-size: 45px;
+}
+#intro-title {
+  font-size: 35px !important;
 }
 
 #section-about {
-  background-color: #9AAEBB;
+  background-color: #e3e3e3;
 }
-#section-about h1 {
-  color: #1A3442;
-  font-size: 45px;
-}
+
 #section-about p {
- color: #1A3442;
+ margin-left: 10%;
+ margin-right: 10%;
+ max-width: 1100px;
+ font-size: 20px;
+}
+
+#headshot {
+  width: 20%;
+  height: 20%;
+  border-radius: 15px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#section-projects {
+  background-color: #e3e3e3;
 }
 
 #section-skills {
-  background-color: #9AAEBB;
+  background-color: #e3e3e3;
 }
 
 #section-contact {
-  background-color: #9AAEBB;
+  background-color: #e3e3e3;
 }
