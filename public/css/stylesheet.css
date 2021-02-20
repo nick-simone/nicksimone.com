@@ -100,13 +100,14 @@ span {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 5px;
   width: 150px;
   height: 150px;
   box-shadow: 0px 0px 5px black;
   padding: 1px 1px;
   background-color: black;
   margin-top: 8px;
+  border: 1px solid black;
 }
 
 .divProject > div {
@@ -114,11 +115,11 @@ img {
 }
 
 #section-projects img {
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 0px black;
   padding: 0px 0px;
-  transform: skewY(-3deg);
-  width: 150px;
-  height: 150px;
+  /* transform: skewY(-3deg); */
+  width: 140px;
+  height: 140px;
   background-color: inherit;
   order: 2;
   flex-shrink: 0;
@@ -140,7 +141,7 @@ img {
 }
 
 .divProject {
-  background-color: #e3e3e3;
+  /* box-shadow: 0px 0px 5px black; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,9 +151,10 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100%;
-  /* background-color: lightgray;
+  background-color: lightgray;
   padding: 20px 20px;
-  border: 1px solid black; */
+  /* border: 1px solid black; */
+  border-radius: 5px;
 }
 
 textarea {
