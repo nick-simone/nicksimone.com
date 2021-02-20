@@ -124,6 +124,12 @@ img {
   order: 2;
   flex-shrink: 0;
   margin: 5px 5px;
+  border: 1px solid gray;
+}
+
+#section-projects button {
+  border: 1px solid gray;
+  background-color: #e3e3e3;
 }
 
 .paragraph-button {
@@ -153,7 +159,7 @@ img {
   max-width: 100%;
   background-color: lightgray;
   padding: 20px 20px;
-  /* border: 1px solid black; */
+  border: 1px solid gray;
   border-radius: 5px;
 }
 
@@ -186,8 +192,10 @@ button {
   font-size: 16px;
   border: 1px solid black;
   margin-bottom: 15px;
+  padding: 10px 20px;
 }
 
 #subButton {
+  padding: 10px 20px;
   margin-bottom: 50px;
 }
