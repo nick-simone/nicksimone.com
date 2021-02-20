@@ -54,6 +54,7 @@ section {
   justify-content: center;
   text-align: center;
   background-color: #e3e3e3;
+  padding: 0 2%;
 }
 
 h1 {
@@ -67,6 +68,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  max-width: 100%;
 }
 
 #section-home {
@@ -87,21 +89,98 @@ h2 {
   background-color: #e3e3e3;
 }
 
-/* #aboutMeContainer {
-  display: flex;
-} */
-
-#section-about p {
- margin-left: 10%;
- margin-right: 10%;
- max-width: 1100px;
- font-size: 20px;
+p {
+ max-width: 100%;
+ font-size: 18px;
 }
 
-#headshot {
-  width: 20%;
-  height: 20%;
+span {
+  font-size: 18px;
+  max-width: 100%;
+}
+
+img {
   border-radius: 15px;
-  max-width: 150px;
-  max-height: 150px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 0px 5px black;
+  padding: 1px 1px;
+  background-color: black;
+  margin-top: 8px;
+}
+
+.divProject > div {
+  margin: 25px;
+}
+
+#section-projects img {
+  box-shadow: 0px 0px 5px black;
+  padding: 0px 0px;
+  transform: skewY(-3deg);
+  width: 150px;
+  height: 150px;
+  background-color: inherit;
+  order: 2;
+  flex-shrink: 0;
+  margin: 5px 5px;
+}
+
+.paragraph-button {
+  order: 3;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+
+#section-projects p {
+  text-align: left;
+  width: 600px;
+}
+
+.divProject {
+  background-color: #e3e3e3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+textarea {
+  width: 90%;
+  background-color: lightgrey;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid black;
+}
+
+input {
+  margin: 10px 0;
+  background-color: lightgrey;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+#email {
+  margin-left: 2%;
+  width: 58%;
+}
+
+#section-about button {
+  margin-top: 25px;
+}
+
+button {
+  background-color: lightgrey;
+  font-size: 16px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+#subButton {
+  margin-bottom: 50px;
 }
