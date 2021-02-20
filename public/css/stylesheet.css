@@ -133,7 +133,7 @@ img {
 
 
 #section-projects p {
-  text-align: left;
+  text-align: center;
   width: 600px;
   max-width: 100%;
   padding: 0 0;
@@ -150,6 +150,9 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 100%;
+  /* background-color: lightgray;
+  padding: 20px 20px;
+  border: 1px solid black; */
 }
 
 textarea {
