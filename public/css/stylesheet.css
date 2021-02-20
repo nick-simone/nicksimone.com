@@ -100,7 +100,6 @@ span {
 }
 
 img {
-  border-radius: 5px;
   width: 150px;
   height: 150px;
   box-shadow: 0px 0px 5px black;
@@ -160,7 +159,6 @@ img {
   background-color: lightgray;
   padding: 20px 20px;
   border: 1px solid gray;
-  border-radius: 5px;
 }
 
 textarea {
@@ -178,8 +176,9 @@ input {
   border: 1px solid black;
 }
 
+
 #email {
-  margin-left: 2%;
+  margin-left: 4%;
   width: 58%;
 }
 
