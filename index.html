@@ -29,38 +29,38 @@
         About
       </h1>
       <div id="aboutMeContainer">
-        <img id="headshot" src="./public/images/nick.jpeg" />
+        <img id="headshot" src="./public/images/nick.png" />
         <p>I am a full-stack software developer with a B. Sc. in Computer Science from Carleton University. I have developed my analytical skills and software development knowledge though my education, co-op positions, and teaching assistant work. I am currently searching for full-time employment in the Toronto area.</p>
         <button type="submit" onclick="window.open('./public/pdf/N. Simone - Resume.pdf')">Resume (.pdf)</button>
       </div>
     </section>
 
     <section id="section-projects">
-        <h1>Projects</h1>
-      <div id="topProject" class="divProject">
-        <img src="./public/images/SEGF.jpeg" />
-        <div class="paragraph-button">
-          <h2>Score Editor's Graphics Framework</h2>
-          <p>A browser-based music score viewer and editor. I spent a semester adding new features to the project. The editor uses SVG graphics to render music scores that are imported in XML format and parsed using JavaScript.</p>
-          <button type="submit" onclick="window.open('./public/pdf/Score Editor\'s Graphics Framework-Report.pdf')">Report (.pdf)</button>
+          <h1>Projects</h1>
+        <div class="project">
+          <img src="./public/images/note.png" />
+          <div class="paragraph-button">
+            <h2>Score Editor's Graphics Framework</h2>
+            <p>A browser-based music score viewer and editor. I spent a semester adding new features to the project. The editor uses SVG graphics to render music scores that are imported in XML format and parsed using JavaScript.</p>
+            <button type="submit" onclick="window.open('./public/pdf/Score Editor\'s Graphics Framework-Report.pdf')">Report (.pdf)</button>
+          </div>
         </div>
-      </div>
-      <div class="divProject">
-        <img src="./public/images/cuACS.jpeg" />
-        <div class="paragraph-button">
-          <h2>Carleton University Animal Care System (cuACS)</h2>
-          <p>A program used to determine the optimal compatability matches of a list of animal shelter clients and animals. An optimal set of matches will take into account the best interests of all animals in the shelter and clients looking to adopt them, rather than simply pairing the best one-to-one matches. The program is written in C++ and uses the Qt framework for the front end.</p>
-          <button type="submit" onclick="window.open('https\://github.com/nick-simone/Animal-Farm-cuACS')">View on GitHub</button>
+        <div class="project">
+          <img src="./public/images/cuACS.png" />
+          <div class="paragraph-button">
+            <h2>Carleton University Animal Care System (cuACS)</h2>
+            <p>A program used to determine the optimal compatability matches of a list of animal shelter clients and animals. An optimal set of matches will take into account the best interests of all animals in the shelter and clients looking to adopt them, rather than simply pairing the best one-to-one matches. The program is written in C++ and uses the Qt framework for the front end.</p>
+            <button type="submit" onclick="window.open('https\://github.com/nick-simone/Animal-Farm-cuACS')">View on GitHub</button>
+          </div>
         </div>
-      </div>
-      <div class="divProject"> 
-        <img src="./public/images/vigenere.jpeg"/>
-        <div class="paragraph-button">
-          <h2>Vigenère Decoder</h2>
-          <p>A python program used to find the key of a plaintext encrypted using the Vigenère cipher with an unknown keylength. The program uses frequency analysis to pick out the most probable keylength. Once the keylength is found, the most probable plaintext message can be retrieved using frequency analysis.</p>
-          <button type="submit" onclick="window.open('https\://github.com/nick-simone/vigeneredecoder')">View on GitHub</button>
+        <div class="project"> 
+          <img src="./public/images/key.png"/>
+          <div class="paragraph-button">
+            <h2>Vigenère Decoder</h2>
+            <p>A python program used to find the key of a plaintext encrypted using the Vigenère cipher with an unknown keylength. The program uses frequency analysis to pick out the most probable keylength. Once the keylength is found, the most probable plaintext message can be retrieved using frequency analysis.</p>
+            <button type="submit" onclick="window.open('https\://github.com/nick-simone/vigeneredecoder')">View on GitHub</button>
+          </div>
         </div>
-      </div>
     </section>
 
     <section id="section-skills">
@@ -78,14 +78,20 @@
     <section id="section-contact">
       <h1>Contact</h1>
       <span style="margin: 25px 0;">Feel free to send me a message - I'd love to get in touch about employment or collaboration opportunities.</span>
-      <div id="contactContainer">
-      <form method="POST" class="gform" id="messageForm" action="https://script.google.com/macros/s/AKfycbyXjeo4F6Ks-i6Y9YgM5cdFWesndn1MCy6veNOBSQ/exec">
-            <input type="text" id="name" name="name" placeholder="Your name..">
-            <input type="text" id="email" name="email" placeholder="Your email..">
-          <textarea id="message" name="message" placeholder="Your message.." style="height:170px"></textarea>
-          <input id="subButton" type="submit" value="Submit">
+      <div id="contact-container">
+      <form method="POST" class="gform" id="message-form" action="https://script.google.com/macros/s/AKfycbyXjeo4F6Ks-i6Y9YgM5cdFWesndn1MCy6veNOBSQ/exec">
+          <div class="form-elements">
+            <div class="name-email-container">
+              <input type="text" id="name" name="name" placeholder="Your name..">
+              <input type="text" id="email" name="email" placeholder="Your email..">
+            </div>
+            <textarea id="message" name="message" placeholder="Your message.." style="height:170px"></textarea>
+            <input id="subButton" type="submit" value="Submit">
+            <span class="thankyou-message" style="display: none;" style="margin: 25px 0;">Thank you for your message!</span>
+          </div>
         </form>
     </div>
       </section>
   </body>
+  <script src="./src/handleSubmit.js"></script>
 </html>
