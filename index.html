@@ -65,19 +65,23 @@
 
     <section id="section-skills">
       <h1>Skills</h1>
-      <div class="skillGrid">
-        <h2>Back End </h2>
-        <p>Python, Java, C, C++, C#, Go (Golang), Node.js, Visual Basic, SQL, MongoDB</p>
-        <h2>Front End</h2>
-        <p>HTML, CSS, XML, Qt, JavaFX, React.js, JSX, .NET</p>
-        <h2>Other</h2>
-        <p>Linux, Git, Apache Subversion (SVN), Docker, Kubernetes</p>
-      </div>
+        <div class="skill" class="fade-in">
+          <h2>Back End </h2>
+          <p>Python, Java, C, C++, C#, Go (Golang), Node.js, Visual Basic, SQL, MongoDB</p>
+        </div>
+        <div class="skill">
+          <h2>Front End</h2>
+          <p>HTML, CSS, XML, Qt, JavaFX, React.js, JSX, .NET</p>
+        </div>
+        <div class="skill">
+          <h2>Other</h2>
+          <p>Linux, Git, Apache Subversion (SVN), Docker, Kubernetes</p>
+        </div>
     </section>
     
     <section id="section-contact">
       <h1>Contact</h1>
-      <span style="margin: 25px 0;">Feel free to send me a message - I'd love to get in touch about employment or collaboration opportunities.</span>
+      <p>Feel free to send me a message - I'd love to get in touch about employment or collaboration opportunities.</p>
       <div id="contact-container">
       <form method="POST" class="gform" id="message-form" action="https://script.google.com/macros/s/AKfycbyXjeo4F6Ks-i6Y9YgM5cdFWesndn1MCy6veNOBSQ/exec">
           <div class="form-elements">
@@ -85,10 +89,10 @@
               <input type="text" id="name" name="name" placeholder="Your name..">
               <input type="text" id="email" name="email" placeholder="Your email..">
             </div>
-            <textarea id="message" name="message" placeholder="Your message.." style="height:170px"></textarea>
-            <input id="subButton" type="submit" value="Submit">
-            <span class="thankyou-message" style="display: none;" style="margin: 25px 0;">Thank you for your message!</span>
+            <textarea id="message" name="message" placeholder="Your message.." style="height:170px"></textarea> 
+            <p class="thankyou-message" style="display: none;" style="margin: 25px 0;">Thank you for your message. I'll get back to you as soon as I can!</p>
           </div>
+          <input id="subButton" type="submit" value="Submit">
         </form>
     </div>
       </section>

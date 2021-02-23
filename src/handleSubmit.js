@@ -60,6 +60,47 @@
       if (formData.honeypot) {
         return false;
       }
+
+      console.log(data);
+
+      if (data.name === ""){
+        form.querySelector("#name").style = "border-bottom: 2px solid red";
+        form.querySelector("#name").placeholder = "Your name.. (required)";
+        form.querySelector("#email").style = "border-bottom: 1px solid gray";
+        form.querySelector("#email").placeholder = "Your email..";
+        form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
+        form.querySelector("textarea").placeholder = "Your message..";
+        return;
+      } else {
+        form.querySelector("#name").style = "border-bottom: 1px solid gray";
+        form.querySelector("#name").placeholder = "Your name..";
+      }
+
+      if (data.email === ""){
+        form.querySelector("#email").style = "border-bottom: 2px solid red";
+        form.querySelector("#email").placeholder = "Your email.. (required)";
+        form.querySelector("#name").style = "border-bottom: 1px solid gray";
+        form.querySelector("#name").placeholder = "Your name..";
+        form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
+        form.querySelector("textarea").placeholder = "Your message..";
+        return;
+      } else {
+        form.querySelector("#email").style = "border-bottom: 1px solid gray";
+        form.querySelector("#email").placeholder = "Your email..";
+      }
+
+      if (data.message === ""){
+        form.querySelector("textarea").style = "background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 2px solid red;height: 176px;";
+        form.querySelector("textarea").placeholder = "Your message.. (required)";
+        form.querySelector("#name").style = "border-bottom: 1px solid gray";
+        form.querySelector("#name").placeholder = "Your name..";
+        form.querySelector("#email").style = "border-bottom: 1px solid gray";
+        form.querySelector("#email").placeholder = "Your email..";
+        return;
+      } else {
+        form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
+        form.querySelector("textarea").placeholder = "Your message..";
+      }
   
       disableAllButtons(form);
       var url = form.action;

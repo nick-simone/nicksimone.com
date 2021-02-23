@@ -3,20 +3,10 @@
   src: url(../fonts/geomanist-regular-webfont.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "Fenix";
-  src: url(../fonts/Fenix-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype");
-}
-
 * {
   font-family: "Geomanist", sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -33,11 +23,11 @@
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #898e91;
+  color: gray;
 }
 
 .navbar ul li a:hover {
-  color: black;
+  color: white;
 }
 
 .navbar ul {
@@ -58,16 +48,14 @@ section {
   justify-content: center;
   text-align: center;
   background-color: white;
-  padding: 0 20px;
 }
 
 h1 {
   font-size: 45px;
-  padding: 10px 0;
-  width: 100%;
-  max-width: 100vw;
+  margin-bottom: 50px;
   text-align: left;
   border-bottom: 5px solid black;
+  width: 90%;
 }
 
 h2 {
@@ -76,13 +64,12 @@ h2 {
 }
 
 #section-home {
-  background-color: ;
-  /* background-image: url("../images/sand.jpg"); */
+  background-image: url("../images/sand.jpg");
   height: 100vh;
   /* background-size: 100% 100%; */
 }
 #section-home span {
-  color: black;
+  color: white;
   font-size: 45px;
 }
 #intro-title {
@@ -91,7 +78,7 @@ h2 {
 
 p {
  max-width: 800px;
- font-size: 18px;
+ font-size: 16px;
  padding: 0 10px;
 }
 
@@ -112,7 +99,6 @@ img {
   padding: 1px 1px;
   background-color: black;
   margin-top: 8px;
-  filter:grayscale(100%);
 }
 
 .project > div {
@@ -146,8 +132,7 @@ img {
 
 #section-projects p {
   text-align: center;
-  width: 600px;
-  max-width: 100%;
+  max-width: 600px;
   padding: 0 0;
 }
 
@@ -159,31 +144,61 @@ img {
   flex-direction: row;
   align-content: flex-end;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  max-width: 100%;
+  margin: 10px 0;
+  max-width: 85%;
   padding: 0 20px;
   box-shadow: 0px 0px 5px black;
+}
+
+.skill {
+  width: 60%;
+  max-width: 802px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  align-content: left;
+  align-items: baseline;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px black;
+  margin: 10px 10px;
+  padding: 0px 20px;
+}
+
+.skill h2 {
+  order: 1;
+  margin-bottom: -5px;
+}
+
+.skill p {
+  order: 2;
 }
 
 textarea {
   background-color: white;
   font-size: 16px;
-  resize: none;
-  border: 1px solid black;
+  resize: none !important;
   flex-grow: 1;
   flex-shrink: 1;
-  order: 1
+  order: 1;
+  border: 1px solid white;
+  border-bottom: 1px solid gray;
+  height: 176px;
+}
+
+textarea::placeholder {
+  color: gray;
 }
 
 input {
   margin: 10px 0;
   background-color: white;
   font-size: 16px;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-bottom: 1px solid gray;
   flex-grow: 1;
   flex-shrink: 1;
 }
+
 
 #section-about button {
   margin-top: 25px;
@@ -210,10 +225,11 @@ input {
 }
 
 .form-elements {
+  max-width: 600px;
   width: 600px;
   display: flex;
   flex-direction: column;
-  resize: horizontal;
+  min-width: 0;
 }
 
 button {
@@ -222,6 +238,12 @@ button {
   margin-bottom: 15px;
   padding: 10px 20px;
   background-color: white !important;
+  border: 1px solid white;
+  border-bottom: 1px solid gray;  
+}
+
+button:hover {
+  border: 1px solid gray;
 }
 
 .thankyou-message {
@@ -229,7 +251,16 @@ button {
 }
 
 #subButton {
+  font-size: 16px;
+  border: 1px solid white;
+  border-bottom: 1px solid gray;  
+  margin-bottom: 15px;
   padding: 10px 20px;
   margin-bottom: 50px;
-  order: 3;
 }
+
+#subButton:hover {
+  border: 1px solid gray;
+}
+
+
