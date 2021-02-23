@@ -13,7 +13,7 @@
     $(document).ready(function(){
       let items = [$("#intro-name"), $("#intro-title"), $(".navbar")];
       for (let  i = 0; i < items.length; i++){
-        items[i].hide().delay(125*i).fadeIn(2000);
+        items[i].hide().delay(50*i).fadeIn(2500);
       }
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
       $(".fade").each(function() {
