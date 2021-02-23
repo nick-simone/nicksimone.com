@@ -225,8 +225,7 @@ input {
 }
 
 .form-elements {
-  max-width: 600px;
-  width: 600px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -262,5 +261,3 @@ button:hover {
 #subButton:hover {
   border: 1px solid gray;
 }
-
-
