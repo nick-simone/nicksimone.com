@@ -63,41 +63,33 @@
 
       if (data.name === ""){
         form.querySelector("#name").style = "border-bottom: 2px solid red";
-        form.querySelector("#name").placeholder = "Your name.. (required)";
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
-        form.querySelector("#email").placeholder = "Your email..";
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
-        form.querySelector("textarea").placeholder = "Your message..";
+        form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
         return;
       } else {
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
-        form.querySelector("#name").placeholder = "Your name..";
       }
 
       if (data.email === ""){
         form.querySelector("#email").style = "border-bottom: 2px solid red";
-        form.querySelector("#email").placeholder = "Your email.. (required)";
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
-        form.querySelector("#name").placeholder = "Your name..";
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
-        form.querySelector("textarea").placeholder = "Your message..";
+        form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
         return;
       } else {
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
-        form.querySelector("#email").placeholder = "Your email..";
       }
 
       if (data.message === ""){
         form.querySelector("textarea").style = "background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 2px solid red;height: 176px;";
-        form.querySelector("textarea").placeholder = "Your message.. (required)";
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
-        form.querySelector("#name").placeholder = "Your name..";
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
-        form.querySelector("#email").placeholder = "Your email..";
+        form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
         return;
       } else {
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
-        form.querySelector("textarea").placeholder = "Your message..";
+
       }
   
       disableAllButtons(form);
@@ -113,10 +105,10 @@
             if (formElements) {
               formElements.style.enabled = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou-message");
-            console.log(thankYouMessage);
-            if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
+            var thankYouParagraph = document.querySelector("#contact-para");
+            if (thankYouParagraph) {
+                thankYouParagraph.innerHTML = "Thanks for reaching out! I'll get back to you as soon as I can.";
+                form.querySelector(".error").style = "color: red; visibility: hidden; margin: 0 0;";
             }
           }
       };
