@@ -61,8 +61,6 @@
         return false;
       }
 
-      console.log(data);
-
       if (data.name === ""){
         form.querySelector("#name").style = "border-bottom: 2px solid red";
         form.querySelector("#name").placeholder = "Your name.. (required)";

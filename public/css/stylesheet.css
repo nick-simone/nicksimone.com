@@ -68,10 +68,12 @@ h2 {
   height: 100vh;
   /* background-size: 100% 100%; */
 }
+
 #section-home span {
   color: white;
   font-size: 45px;
 }
+
 #intro-title {
   font-size: 35px !important;
 }
@@ -115,7 +117,7 @@ img {
   background-color: inherit;
   order: 2;
   flex-shrink: 0;
-  margin: 5px 5px;
+  margin: 20px 5px;
   border: 1px solid white;
 }
 
@@ -128,7 +130,6 @@ img {
   flex-grow: 0;
   flex-shrink: 1;
 }
-
 
 #section-projects p {
   text-align: center;
@@ -176,13 +177,13 @@ img {
 textarea {
   background-color: white;
   font-size: 16px;
-  resize: none !important;
   flex-grow: 1;
   flex-shrink: 1;
   order: 1;
   border: 1px solid white;
   border-bottom: 1px solid gray;
   height: 176px;
+  resize: none;
 }
 
 textarea::placeholder {
@@ -198,7 +199,6 @@ input {
   flex-grow: 1;
   flex-shrink: 1;
 }
-
 
 #section-about button {
   margin-top: 25px;
@@ -225,7 +225,6 @@ input {
 }
 
 .form-elements {
-  width: 400px;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -235,6 +234,7 @@ button {
   font-size: 16px;
   border: 1px solid gray;
   margin-bottom: 15px;
+  margin: 0 15px;
   padding: 10px 20px;
   background-color: white !important;
   border: 1px solid white;
@@ -260,4 +260,17 @@ button:hover {
 
 #subButton:hover {
   border: 1px solid gray;
+}
+
+.personal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.personal-links button {
+  width: 140px;
+  height: 42px;
 }
