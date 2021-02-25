@@ -90,6 +90,7 @@ p {
 
 #section-skills p {
   padding: 0 20px;
+  text-align: left;
 }
 
 span {
@@ -290,3 +291,4 @@ button:hover {
   visibility: hidden;
   margin-top: 5px;
 }
+
