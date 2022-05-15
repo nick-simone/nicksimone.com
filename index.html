@@ -9,6 +9,11 @@
     <title>Nick Simone</title>
     <!-- reCAPTCHA v2 -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function enableSubmit() {
+        document.getElementById("subButton").disabled = false;
+      }
+    </script>
     <!-- scroll effect -->
     <script>history.scrollRestoration = "manual"</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -132,11 +137,12 @@
           <textarea class="fade" id="message" name="message" placeholder="Your message.." style="height:170px"></textarea> 
         </div>
         <p class="error">*This field is required.</p>
-        <input class="fade" id="subButton" type="submit" value="Submit">
+        <input class="fade" id="subButton" type="submit" value="Submit" disabled="disabled">
         <div class="center">
           <div
           class="g-recaptcha"
           data-sitekey="6Leny-8fAAAAALNhWAhuemjY-bR1ImhbbJ5Ovl64"
+          data-callback="enableSubmit"
           ></div>
         </div>
       </form>
