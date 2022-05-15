@@ -7,6 +7,9 @@
     <link rel="icon" href="./public/images/logo-black.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nick Simone</title>
+    <!-- reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- scroll effect -->
     <script>history.scrollRestoration = "manual"</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -121,16 +124,22 @@
       <p id="contact-para" class="fade">Feel free to send me a message - I'd love to get in touch with you!</p>
       <div id="contact-container">
       <form method="POST" class="gform" id="message-form" action="https://script.google.com/macros/s/AKfycbyXjeo4F6Ks-i6Y9YgM5cdFWesndn1MCy6veNOBSQ/exec">
-          <div class="form-elements">
-            <div class="name-email-container fade">
-              <input type="text" id="name" name="name" placeholder="Your name..">
-              <input type="text" id="email" name="email" placeholder="Your email..">
-            </div>
-            <textarea class="fade" id="message" name="message" placeholder="Your message.." style="height:170px"></textarea> 
+        <div class="form-elements">
+          <div class="name-email-container fade">
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <input type="text" id="email" name="email" placeholder="Your email..">
           </div>
-          <p class="error">*This field is required.</p>
-          <input class="fade" id="subButton" type="submit" value="Submit">
-        </form>
+          <textarea class="fade" id="message" name="message" placeholder="Your message.." style="height:170px"></textarea> 
+        </div>
+        <p class="error">*This field is required.</p>
+        <input class="fade" id="subButton" type="submit" value="Submit">
+        <div class="center">
+          <div
+          class="g-recaptcha"
+          data-sitekey="6Leny-8fAAAAALNhWAhuemjY-bR1ImhbbJ5Ovl64"
+          ></div>
+        </div>
+      </form>
     </div>
     <div class="bottom">
       <p>2021 © Nick Simone</p>

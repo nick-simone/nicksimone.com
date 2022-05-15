@@ -272,7 +272,7 @@ button:hover {
   border-bottom: 1px solid gray;  
   margin-bottom: 15px;
   padding: 10px 20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -299,3 +299,11 @@ button:hover {
   margin-top: 5px;
 }
 
+.g-recaptcha {
+  text-align: center;
+  display: inline-block;
+}
+
+.bottom {
+  margin-top: 100px;
+}
