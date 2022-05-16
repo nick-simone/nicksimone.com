@@ -66,6 +66,7 @@
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
         form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
+        form.querySelector(".error").innerHTML = "*This field is required.";
         return;
       } else {
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
@@ -76,20 +77,30 @@
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
         form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
+        form.querySelector(".error").innerHTML = "*This field is required.";
         return;
       } else {
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
       }
+
+      const containsUrl = new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?(/.*)?");
 
       if (data.message === ""){
         form.querySelector("textarea").style = "background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 2px solid red;height: 176px;";
         form.querySelector("#name").style = "border-bottom: 1px solid gray";
         form.querySelector("#email").style = "border-bottom: 1px solid gray";
         form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
+        form.querySelector(".error").innerHTML = "*This field is required.";
+        return;
+      } else if (containsUrl.test(data.message)) {
+        form.querySelector("textarea").style = "background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 2px solid red;height: 176px;";
+        form.querySelector("#name").style = "border-bottom: 1px solid gray";
+        form.querySelector("#email").style = "border-bottom: 1px solid gray";
+        form.querySelector(".error").style = "color: red; visibility: visible; margin-top: 5px;";
+        form.querySelector(".error").innerHTML = "*No links please!";
         return;
       } else {
         form.querySelector("textarea").style = "black; background-color: white;font-size: 16px;resize: none !important;flex-grow: 1;flex-shrink: 1;order: 1;border: 1px solid white;border-bottom: 1px solid gray;height: 176px;";
-
       }
   
       disableAllButtons(form);
