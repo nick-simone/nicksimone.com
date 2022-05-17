@@ -274,6 +274,7 @@ button:hover {
   padding: 10px 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  margin-top: 0;
 }
 
 #subButton:hover {
@@ -302,4 +303,14 @@ button:hover {
 .g-recaptcha {
   text-align: center;
   display: inline-block;
+}
+
+.bottom {
+  margin-top: 100px;
+}
+
+.honeypot {
+  margin: 0 0;
+  padding: 0 0;
+  visibility: hidden;
 }
