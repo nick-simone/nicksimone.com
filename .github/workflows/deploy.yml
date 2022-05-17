@@ -23,4 +23,4 @@ jobs:
       - run: cp index.html dist/
       - run: cp -r public dist/
       - run: cp -r src dist/
-      - run: aws s3 sync ./dist/* s3://nicksimone.com
+      - run: aws s3 sync ./dist/ s3://nicksimone.com
