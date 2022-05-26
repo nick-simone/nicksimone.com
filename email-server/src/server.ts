@@ -3,7 +3,7 @@ import AWS from "aws-sdk";
 import cors from "cors";
 
 const app: Application = express();
-const PORT: number = 443;
+const PORT: number = 80;
 const FROM_EMAIL_ADDRESS = "nick.simone100@gmail.com";
 const TO_EMAIL_ADDRESS = FROM_EMAIL_ADDRESS;
 
