@@ -1,10 +1,13 @@
 import express, {Application, Request, Response} from "express";
 import AWS from "aws-sdk";
+import cors from "cors";
 
 const app: Application = express();
 const PORT: number = 80;
 const FROM_EMAIL_ADDRESS = "nick.simone100@gmail.com";
 const TO_EMAIL_ADDRESS = FROM_EMAIL_ADDRESS;
+
+app.use(cors({origin: "https://www.nicksimone.com"}));
 
 AWS.config.loadFromPath("./config.json");
 const ses = new AWS.SES();
